@@ -1,0 +1,30 @@
+.DS_Store
+
+# Buck
+buck-out/
+.buckd/
+
+# Xcode
+**/xcuserdata/
+**/*.xcodeproj/
+**/*.xcworkspace/
+
+# Make
+*.d
+
+.build/
+build/
+!Carthage/**/build/
+DerivedData/
+Output/
+
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+*.swp
