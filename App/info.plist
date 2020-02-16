@@ -28,5 +28,16 @@
   <array>
     <string>Icon.png</string>
   </array>
+  <key>UILaunchImages</key>
+    <array>
+      <dict>
+        <key>UILaunchImageMinimumOSVersion</key>
+        <string>8.0</string>
+        <key>UILaunchImageName</key>
+        <string>launchscreen</string>
+        <key>UILaunchImageOrientation</key>
+        <string>Portrait</string>
+      </dict>
+    </array>
 </dict>
 </plist>
