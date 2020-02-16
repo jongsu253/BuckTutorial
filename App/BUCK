@@ -1,0 +1,21 @@
+apple_binary(
+  name = "AppBinary",
+  headers = glob([
+    "**/*.h",
+  ]),
+  srcs = glob([
+    "**/*.m",
+  ]),
+  frameworks = [
+    "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    "$SDKROOT/System/Library/Frameworks/Foundation.framework",
+  ],
+)
+
+apple_bundle(
+  name = "App",
+  extension = "app",
+  binary = ":AppBinary",
+  product_name = "App",
+  info_plist = "info.plist",
+)
