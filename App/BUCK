@@ -1,3 +1,12 @@
+apple_resource(
+  name = "AppResources",
+  files = glob(["Resources/Images/**/*.png"]),
+  variants = glob([
+    "Resources/Strings/**/*.strings",
+  ]),
+  dirs = []
+)
+
 apple_binary(
   name = "AppBinary",
   headers = glob([
@@ -9,6 +18,9 @@ apple_binary(
   frameworks = [
     "$SDKROOT/System/Library/Frameworks/UIKit.framework",
     "$SDKROOT/System/Library/Frameworks/Foundation.framework",
+  ],
+  deps = [
+    ":AppResources"
   ],
 )
 
